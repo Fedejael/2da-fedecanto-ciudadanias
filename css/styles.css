@@ -3,9 +3,27 @@
     margin: 0;  
 }
 
+    /*GRID LAYOUT*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+    grid-template-areas:
+    
+    "header           header           header           header"
+    "section          section          section          section"
+    "aside            main             main             main"
+    "section-mapa     mapa-comentarios mapa-comentarios mapa-comentarios"
+    "footer           footer           footer           footer"
+    ;
+
+}
+
 header{
     background-color: #ebebeb;
-    color: #000
+    color: #000;
+    grid-area: header;
 }
  
 .right-navbar {
@@ -23,6 +41,7 @@ header{
 
 .class-carrusel{
     background-color: #ebebeb;
+    grid-area: section;
 }
 
 .img-banner {
@@ -32,14 +51,15 @@ header{
 .aside-nosotros{
     display: flex;
     background-color: #ebebeb;
+    grid-area: aside;
 }
 
 .div-aside-nosotros{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80vh;
-    width: 40vw;
+/*     height: 80vh;
+    width: 40vw; */
     background-color: #ebebeb;
 
     h3{
@@ -54,7 +74,6 @@ header{
 .div-noticias{
     display: flex;
     justify-content: space-around;
-    width: 100%;
 }
 
 .section-noticias{
@@ -72,38 +91,44 @@ article{
 article img{
     
     width: 100%;
+    height: 50%;
 }
 
 .class-main{
     display: flex;
+    flex-direction: column;
     background-color: #ebebeb;
+    grid-area: main;
 }
 
-.section-comentarios{
+.section-mapa {
     display: flex;
+    justify-content: space-around;
+    grid-area: section-mapa;
 }
 
-.div-mapa{
-    height: 80vh;
-    width: 40vw;
-}
-
-.div-reseñas{
+.mapa-comentarios {
     display: flex;
-    
-    article{
-        margin: 0px 9px;
+    align-items: center;
+    background-color: #ebebeb;
+    grid-area: mapa-comentarios;
+
+    article {
+        width: 100%;
     }
 }
 
 footer{
     background-color: #5c008f;
     color: #ffb000;
+    grid-area: footer;
 }
+
 .div-footer{
     display: flex;
     justify-content: space-between;
     align-items: center;    
+    grid-area: div-footer;
 }   
 
 .div-avisos-politica{
@@ -113,7 +138,6 @@ footer{
         margin: 0 15px
     }
 }
-
 
 .div-icons{
     display: flex;
@@ -219,6 +243,7 @@ body {
 }
 
 /*BUSQUEDA PARTIDAS.html*/
+/*dsp borrar esto es para probar*/
 
 main input {
     border-radius: 50px;
