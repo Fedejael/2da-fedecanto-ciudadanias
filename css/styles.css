@@ -253,7 +253,7 @@ body {
 .grid-container-italiana {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.1fr 0.1fr 0.5fr 1fr 0.1fr 0.1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.5fr 1fr 0.1fr 0fr;
     grid-template-areas:
         
     "header              header                header                header"
@@ -295,8 +295,6 @@ header {
 .aside-italiana {
     display: flex;
     flex-direction: column;
-    height: 50vh;
-    width: 20vw;
     padding: 50px;
     grid-area: aside-italiana;
 
@@ -333,6 +331,28 @@ header {
 .div-nombre-comunas {
     display: flex;
     flex-direction: column;
+}
+
+/*MEDIA QUERIES - Tablet */
+@media (max-width: 768px) {
+
+    .grid-container-italiana {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.0,1fr 0.2fr 0.5fr 0.1fr 0.2fr 0.4fr 0.1fr;
+        grid-template-areas:
+        
+        "header                header"
+        "section               section"
+        "section-informacion   section-informacion"
+        "main-italiana         main-italiana"
+        "aside                 aside"
+        "footer                footer"
+        ;
+    }
+}
+
+@media (max-width: 480px) {
+
 }
 
 /*CIUDADANIA ESPAÑOLA.html*/
