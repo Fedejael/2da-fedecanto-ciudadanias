@@ -19,7 +19,10 @@
     ;
 }
 
-header{
+header{    
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
     background-color: #ebebeb;
     color: #000;
     grid-area: header;
@@ -38,7 +41,7 @@ header{
     }
 }
 
-.class-carrusel{
+.class-carrusel {
     background-color: #ebebeb;
     grid-area: section;
 }
@@ -65,6 +68,7 @@ header{
 
     p {      
        margin: 20px 20px;
+       /* margin-bottom: 10%; */
     }
 }
 
@@ -82,7 +86,6 @@ header{
 
 article{
     width: 300px;
-    margin-bottom: 10%;
 }
 
 article img{    
@@ -245,6 +248,34 @@ body {
     background-color: #ebebeb;
 }
 
+/*GRID LAYOUT*/
+
+.grid-container-italiana {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.1fr 0.1fr 0.5fr 1fr 0.1fr 0.1fr;
+    grid-template-areas:
+        
+    "header              header                header                header"
+    "section             section               section               section"
+    "section-informacion section-informacion   section-informacion   section-informacion"
+    "aside-italiana      main-italiana         main-italiana         main-italiana"
+    "aside-italiana      section-comunas       section-comunas       section-comunas"
+    "footer              footer                footer                footer"
+    ;
+}
+
+header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    grid-area: header;
+}
+
+.section-informacion {
+    grid-area: section-informacion;
+}
+
 .container {
     display: flex;
 }
@@ -258,8 +289,7 @@ body {
 
 .div-info-italiana {
     display: flex;
-    justify-content: space-between;
-    padding: 50px;
+    justify-content: space-evenly;
 }
 
 .aside-italiana {
@@ -268,11 +298,16 @@ body {
     height: 50vh;
     width: 20vw;
     padding: 50px;
+    grid-area: aside-italiana;
 
     div h3, p {
         display: flex;
         justify-content: center;
     }
+}
+
+.main-italiana {
+    grid-area: main-italiana;
 }
 
 .section-main-italiana {
@@ -293,8 +328,6 @@ body {
 .div-comunas {
     display: flex;
     justify-content: space-evenly
-
-
 }
 
 .div-nombre-comunas {
@@ -339,7 +372,6 @@ body {
 }
 
 /*BUSQUEDA PARTIDAS.html*/
-/*dsp borrar esto es para probar*/
 
 main input {
     border-radius: 50px;
