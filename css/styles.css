@@ -19,31 +19,36 @@
     ;
 }
 
-header{    
+header{   
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     background-color: #ebebeb;
     color: #000;
     grid-area: header;
+    margin: 10px 20px 0px 20px;
+    border: solid rgb(195, 207, 217) 2px
 }
  
 .right-navbar {
     display: flex;
-    justify-content: flex-end;       
+    justify-content: flex-end; 
 
     li{
         margin: 0 8px;
     }
 
     a{
-        color: #000
+        font-size: larger ;
+        color: #F4F9FF;   
+        text-decoration: none;
     }
 }
 
 .class-carrusel {
     background-color: #ebebeb;
     grid-area: section;
+    margin: 10px 20px 0px 20px;
 }
 
 .img-banner {
@@ -68,7 +73,6 @@ header{
 
     p {      
        margin: 20px 20px;
-       /* margin-bottom: 10%; */
     }
 }
 
@@ -121,6 +125,7 @@ footer{
     background-color: #5c008f;
     color: #ffb000;
     grid-area: footer;
+    margin: 10px 20px 0px 20px;
 }
 
 .div-footer{
@@ -253,7 +258,7 @@ body {
 .grid-container-italiana {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.1fr 0.1fr 0.5fr 1fr 0.1fr 0fr;
+    grid-template-rows: 0.0,1fr 0.1fr 0.5fr 1.5fr 0.1fr 0fr;
     grid-template-areas:
         
     "header              header                header                header"
@@ -265,15 +270,23 @@ body {
     ;
 }
 
-header {
+.class-header-italiana {
+
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     grid-area: header;
+    margin: 10px 20px 0px 20px;
+    border: solid rgb(195, 207, 217) 2px;
+    background-color: #008C45;
+    color: #F4F9FF;
 }
 
 .section-informacion {
     grid-area: section-informacion;
+    margin: 10px 20px 0px 20px;
+    border: solid rgb(195, 207, 217) 2px;
+    background-color: #ffffff;
 }
 
 .container {
@@ -296,40 +309,110 @@ header {
     display: flex;
     flex-direction: column;
     grid-area: aside-italiana;
+    margin: 10px 20px 0px 20px;
+    border: solid rgb(195, 207, 217) 2px;
+    align-items: center;
+    background-color: #ffffff;
+}
 
-    div h3, p {
-        display: flex;
-        justify-content: center;
-    }
+.divisor-aside {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-titulos-aside-italiana {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 20px 5px 20px;
+}
+
+.div-parrafos-aside-italiana {
+    margin: 15px 20px 10px 20px
+}
+
+.class-bottom {
+    color: rgb(101, 88, 245);
+    border-color: rgb(199, 195, 251);
 }
 
 .main-italiana {
     grid-area: main-italiana;
+    margin: 11px 20px 0px 20px;
+    /* border: solid rgb(195, 207, 217) 2px */
 }
 
 .section-main-italiana {
+    /* display: flex; */
+    margin: 0px 0px 20px 0px;
+    border: solid rgb(195, 207, 217) 2px;
+    background-color: #ffffff;
+
     section div h2 {
         display: flex;
         justify-content: center;
     }
 }
 
+.div-srv-traducciones {
+    display: flex;
+}
+
+.div-srv-rectificacion {
+    display: flex;
+}
+
+.div-srv-genealogia {
+    display: flex;
+}
+
+.div-srv-verificacion {
+    display: flex;
+}
+
+.div-srv-asesoramiento {
+    display: flex;
+}
+
+.div-srv-reconstruccion {
+    display: flex;
+}
+
 .section-comunas {
-    border-style: solid;
+    border: solid rgb(195, 207, 217) 2px;
+    background-color: #ffffff;
+
     h3 {
         display: flex;
         justify-content: center;
     }
 }
 
+.div-separador-comunas {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+
 .div-comunas {
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .div-nombre-comunas {
     display: flex;
     flex-direction: column;
+    align-items: center
+}
+
+.class-footer-italiana {
+    background-color: #cd212A;
+    color: #F4F9FF;
+    grid-area: footer;
+    margin: 10px 20px 0px 20px;
 }
 
 /*MEDIA QUERIES - Tablet */
@@ -352,10 +435,6 @@ header {
         width: 50%;
     }
 
-    .main-italiana .section-comunas {
-        /* display: none; */
-    }
-
     .section-comunas {
         grid-area: comunas;
     }
@@ -363,9 +442,32 @@ header {
 
 @media (max-width: 480px) {
 
-/*     .section-comunas {
+    .grid-container-italiana {
+
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 0.1fr 0.2fr 0.3fr 0.1fr 0.1fr 0.001fr;
+        grid-template-areas:
+        
+        "header"
+        "section"
+        "section-informacion"
+        "main-italiana"
+        "aside-italiana"
+        "footer"
+        ;
+    }
+
+    .div-info-italiana {
         display: flex;
-    } */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aside-italiana {
+        width: 100%;
+        align-items: center;
+    }
+
 }
 
 /*CIUDADANIA ESPAÑOLA.html*/
