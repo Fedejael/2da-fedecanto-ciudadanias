@@ -133,7 +133,7 @@ header{
 }
 
 .div-noticias article h3 {
-    margin: 10px 0;
+    margin: 30px 0;
 }
 
 .div-noticias article p {
@@ -167,7 +167,6 @@ header{
 
 .mapa-comentarios {
     display: flex;
-    align-items: center;
     background-color: #ffffff;
     margin: 10px 20px 0px 20px;
     border: solid rgb(195, 207, 217) 2px;
@@ -179,9 +178,16 @@ header{
     }
 }
 
+.div-star {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+
+}
+
 footer{
-    background-color: #5c008f;
-    color: #ffb000;
+    background-color: #004d99;
+    color: #F4F9FF;
     grid-area: footer;
     margin: 10px 20px 0px 20px;
 }
@@ -241,6 +247,10 @@ footer{
         }
     }
 
+    .div-noticias article p {
+        align-content: space-between;
+    }
+
     .div-aside-nosotros {
         margin: 10px 20px 0px 20px;
     }
@@ -268,9 +278,10 @@ footer{
 
     .mapa-comentarios {
         display: flex;
+        align-items: flex-start;
 
         article {
-            margin: 30px;
+            margin: 2px;
         }
     }
         
