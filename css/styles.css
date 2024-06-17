@@ -55,6 +55,7 @@ header{
     display: flex;
     justify-content: flex-end; 
     font-family: "Roboto";
+    margin-bottom: 0rem;
 
     li{
         margin: 0 8px;
@@ -65,6 +66,10 @@ header{
         color: #F4F9FF;   
         text-decoration: none;
     }
+}
+
+.btn-hov:hover {
+    color: orange;
 }
 
 .class-carrusel {
@@ -134,6 +139,7 @@ header{
 
 .div-noticias article h3 {
     margin: 30px 0;
+    font-size: 1rem;
 }
 
 .div-noticias article p {
@@ -174,7 +180,8 @@ header{
 
     article {
         width: 100%;
-        margin: 50px;
+        margin: 10px;
+        /* margin: 50px; */
     }
 }
 
@@ -197,19 +204,23 @@ footer{
     justify-content: space-between;
     align-items: center;    
     grid-area: div-footer;
+
+    p {
+        margin-bottom:0rem;
+    }
 }   
 
 .div-avisos-politica{
     display: flex;
     
     p{
-        margin: 0 15px
+        margin: 0 15px;
     }
 }
 
 .div-icons{
     display: flex;
-    margin-right: 5px
+    margin-right: 5px;
 }
 
 /*MEDIA QUERIES - Tablet */
@@ -217,7 +228,7 @@ footer{
 
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 0.1fr 0.2fr 1.1fr 0.1fr 0.2fr 0.4fr 0.2fr;
+        grid-template-rows: 0.1fr 0.2fr 1.1fr 0.1fr 0.2fr 0.4fr 0.1fr;
         grid-template-areas:
         
         "header           header"
