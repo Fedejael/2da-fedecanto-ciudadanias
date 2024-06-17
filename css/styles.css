@@ -209,6 +209,10 @@ footer{
     .div-footer{
         display: flex;
         flex-direction: column;
+
+        p {
+            text-align: center;
+        }
     }   
 }
 
@@ -749,7 +753,6 @@ body {
         order: -1;
         margin: 10px 33px;
     }
-
 }
 
 /*CIUDADANIA ESPAÑOLA.html*/
