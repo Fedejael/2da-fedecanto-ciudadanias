@@ -273,7 +273,7 @@ body {
 .grid-container-italiana {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.0,1fr 0.1fr 0.5fr 1.5fr 0.1fr 0fr;
+    grid-template-rows: 0.0,1fr 0.1fr 0.9fr 1.5fr 0.1fr 0fr;
     grid-template-areas:
         
     "header              header                header                header"
@@ -499,11 +499,11 @@ body {
 }
 
 /*MEDIA QUERIES - Tablet */
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 481px) {
 
     .grid-container-italiana {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 0.1fr 0.2fr 0.3fr 1.8fr 0.1fr 0.001fr;
+        grid-template-rows: 0.1fr 0.2fr 0.9fr 0.1fr 0.0,1fr;
         grid-template-areas:
         
         "header                header"
@@ -514,13 +514,115 @@ body {
         "footer                footer"
         ;
     }
-    .aside-italiana {
-        width: 50%;
+
+    .div-info-italiana {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: stretch;
+    }
+
+    .div-srv-trad {
+        display: flex;
+        align-items: center;
+        margin: 10px 0px;
+
+        img {
+            margin: 10px;
+        }
+        p,h3 {
+            margin-left: 0px;
+        }
+    }
+
+    .div-srv-gen {
+        display: flex;
+        align-items: center;
+        margin: 10px 0px;
+
+        img {
+            margin: 10px;
+        }
+        p,h3 {
+            margin-left: 0px;
+        }
+    }
+
+    .div-srv-rect{
+        display: flex;
+        align-items: center;
+        margin: 10px 0px;
+
+        img {
+            margin: 10px;
+        }
+
+        p, h3 {
+            margin-left: 0px;
+        }
+    }
+
+    .div-srv-ver {
+        display: flex;
+        align-items: center;
+        margin: 10px 0px;
+
+        img {
+            margin: 10px;
+        }
+
+        p,h3 {
+            margin-left: 0px;
+        }
+    }
+
+    .div-srv-ase {
+        display: flex;
+        align-items: center;
+        margin: 10px 0px;
+
+        img {
+            margin: 10px;
+        }
+
+        p,h3 {
+            margin-left: 0px;
+        }
+    }
+
+    .div-srv-recon {
+        display: flex;
+        align-items: center;
+        margin: 10px 0px;
+
+        img {
+            margin: 10px;
+        }
+
+        p,h3 {
+            margin-left: 0px;
+        }
     }
 
     .section-comunas {
         grid-area: comunas;
     }
+
+    .div-separador-comunas {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .div-imagen-comunas {
+        order: -1;
+        margin: 10px 33px;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -528,7 +630,7 @@ body {
     .grid-container-italiana {
 
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: 0.1fr 0.2fr 0.3fr 0.1fr 0.1fr 0.001fr;
+        grid-template-rows: 0.1fr 0.1fr 0.3fr 0.1fr 0.6fr 0.001fr;
         grid-template-areas:
         
         "header"
@@ -547,8 +649,105 @@ body {
     }
 
     .aside-italiana {
-        width: 100%;
         align-items: center;
+        margin: 10px 20px 0px 20px;
+    }
+
+    .div-srv-trad {
+        display: flex;
+        align-items: center;
+        margin: 10px 0px;
+
+        img {
+            margin: 10px;
+        }
+        p,h3 {
+            margin-left: 0px;
+        }
+    }
+
+    .div-srv-gen {
+        display: flex;
+        align-items: center;
+        margin: 10px 0px;
+
+        img {
+            margin: 10px;
+        }
+        p,h3 {
+            margin-left: 0px;
+        }
+    }
+
+    .div-srv-rect{
+        display: flex;
+        align-items: center;
+        margin: 10px 0px;
+
+        img {
+            margin: 10px;
+        }
+
+        p, h3 {
+            margin-left: 0px;
+        }
+    }
+
+    .div-srv-ver {
+        display: flex;
+        align-items: center;
+        margin: 10px 0px;
+
+        img {
+            margin: 10px;
+        }
+
+        p,h3 {
+            margin-left: 0px;
+        }
+    }
+
+    .div-srv-ase {
+        display: flex;
+        align-items: center;
+        margin: 10px 0px;
+
+        img {
+            margin: 10px;
+        }
+
+        p,h3 {
+            margin-left: 0px;
+        }
+    }
+
+    .div-srv-recon {
+        display: flex;
+        align-items: center;
+        margin: 10px 0px;
+
+        img {
+            margin: 10px;
+        }
+
+        p,h3 {
+            margin-left: 0px;
+        }
+    }
+
+    .div-separador-comunas {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .div-imagen-comunas {
+        order: -1;
+        margin: 10px 33px;
     }
 
 }
