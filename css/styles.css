@@ -645,11 +645,27 @@ body {
         "footer"
         ;
     }
+    .div-titulo-italiana {
+        h2 {
+            text-align: center;
+        }
+    }
 
     .div-info-italiana {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        article {
+            border-radius: 2%;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.06);
+            margin-bottom: 10px;
+            width: 90%;
+
+            img {
+                border-radius: 2%;
+            }
+        }
     }
 
     .aside-italiana {
