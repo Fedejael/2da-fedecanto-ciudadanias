@@ -70,6 +70,8 @@ header{
 
 .btn-hov:hover {
     color: orange;
+    cursor: pointer;
+    stroke: orange
 }
 
 .class-carrusel {
@@ -82,7 +84,7 @@ header{
     width: 100%;
 }
 
-.aside-nosotros{
+.aside-nosotros {
     display: flex;
     background-color: #ebebeb;
     grid-area: aside;
@@ -96,7 +98,7 @@ header{
     border: solid rgb(195, 207, 217) 2px;
     margin: 10px 0px 0px 20px;
 
-    h3{
+    h2{
         margin-top: 40px;
     }
 
@@ -105,7 +107,7 @@ header{
     }
 }
 
-.div-noticias{
+.div-noticias {
     display: flex;
     justify-content: space-around;
     background-color: #ffffff;
@@ -181,7 +183,11 @@ header{
     article {
         width: 100%;
         margin: 10px;
-        /* margin: 50px; */
+        
+        h4 {
+            display: flex;
+            justify-content: space-around;
+        }
     }
 }
 
